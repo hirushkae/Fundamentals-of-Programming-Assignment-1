@@ -1,0 +1,62 @@
+Algorithm 1
+****************
+
+Finding the highest mark
+*************************
+1. Start
+2. Initialize studentMarks array to store student marks
+3. Input marks to array
+4. initialize variable i=0 and highest=0
+5. For i=0 to 25
+	5.1 if(studentMarks[i]>highest), set highest=studentMarks[0]
+	5.2 increment i=i+1
+6. endFor
+7. Print "The highest mark is + highest"
+8. End 
+
+Finding the lowest mark
+*************************
+1. Start
+2. Initialize studentMarks array to store student marks
+3. Input marks to array
+4. initialize variable i=0 and lowest=101
+5. For i=0 to 25
+	5.1 if(studentMarks[i]<lowest), set lowest=studentMarks[0]
+	5.2 increment i=i+1
+6. endFor
+7. Print "The lowest mark is + lowest"
+8. End
+
+
+Algorithm 2
+****************
+
+Calculating the mean
+**********************
+1. Start
+2. Initialize studentMarks array to store student marks
+3. Input marks to array
+4. initialize variable i=0, total=0 and mean=0
+5. For i=0 to 25
+	5.1 total = total + studentMarks[i]
+	5.2 increment i=i+1
+6. endFor
+7. mean = total/25
+8. Print "The mean is + mean"
+9. End
+
+Calculating the standard deviation
+**********************
+1. Start
+2. Initialize studentMarks array to store student marks
+3. Input marks to array
+4. initialize variable i=0, x=0, y=0 and standardDeviation=0
+5. Get the mean from the previous method
+6. For i=0 to 25
+	5.1 x = x + ((studentMarks[i] - mean)^2)
+	5.2 increment i=i+1
+7. endFor
+8. y = x/25
+9. standardDeviation = square root of y
+10. Print "The standard deviation is + standardDeviation"
+11. End
