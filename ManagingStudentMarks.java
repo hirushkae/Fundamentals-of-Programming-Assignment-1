@@ -12,7 +12,8 @@ public class ManagingStudentMarks
     private static String[] studentNames = new String[25];
     private static int[] studentMarks = new int[25];
     private static int mean;
-        
+    
+    // main method
     public static void main(String args[]){  
          InputMarks();
          highestMarks();
@@ -21,6 +22,7 @@ public class ManagingStudentMarks
          CalculateStandardDeviation();
     }
     
+    // method to input student name and marks
     public static void InputMarks(){
         Scanner scan= new Scanner(System.in);
         System.out.println("Enter unit name");
@@ -45,13 +47,13 @@ public class ManagingStudentMarks
         System.out.println("Student's marks for "+unitName);
         System.out.println("****************************************");
         for (int i = 0; i < 25; i++){
-            System.out.println("\n");
             System.out.println(studentNames[i]+" - "+studentMarks[i]);
-            System.out.println("\n");
         }
+        System.out.println("\n");
         
     }
     
+    // method to find the highest marks
     public static void highestMarks(){
         int highest = 0;
         for(int i = 0; i < 25; i++){
@@ -62,6 +64,7 @@ public class ManagingStudentMarks
         System.out.println("Highest mark is "+highest);
     }
     
+    // method to find the lowest marks
     public static void lowestMarks(){
         int lowest = 101;
         for(int i = 0; i < 25; i++){
@@ -73,6 +76,7 @@ public class ManagingStudentMarks
         System.out.println("\n");
     }
     
+    // method to calculate the mean
     public static void CalculateMean(){
         int total = 0;
         for(int i = 0; i < 25; i++){
@@ -82,6 +86,7 @@ public class ManagingStudentMarks
         System.out.println("The mean is "+mean);
     }
     
+    // method to calculate the standard deviation
     public static void CalculateStandardDeviation(){
         int x = 0;
         double y = 0;
